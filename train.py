@@ -17,3 +17,6 @@ data = pd.read_csv("data/data.csv")
 x = data.iloc[:,[:-2]].values
 y = data.iloc[:,-1].values
 
+# SPLITTING THE TRAINING AND VALIDATION DATA
+x_train, x_val, y_train, y_val = train_test_split(x, y, test_size = 0.1, random_state = 0)
+
