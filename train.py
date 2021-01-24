@@ -12,3 +12,8 @@ import matplotlib.pyplot as plt
 
 # IMPORTING MODULES
 data = pd.read_csv("data/data.csv")
+
+# PREPROCESSING DATA
+x = data.iloc[:,[:-2]].values
+y = data.iloc[:,-1].values
+
