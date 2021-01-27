@@ -39,3 +39,10 @@ spec = [bc,ds,fc,rc,im,fs,ram,pb,dw,dl,fg,fcs]
 # DEFINING CLASSIFICATIONS
 op1 = ["Below Rs.10,000","Rs.10,000 - Rs.20,000","Rs.20,000 - Rs.30,000","Above Rs.30,000"]
 op2 = ["Low Cost","Medium Cost","High Cost","Very High Cost"]
+
+# CLASSIFYING THE USER DATA
+res = model.predict([spec])
+res = np.argmax(res,axis = 1)
+
+# DISPLAYING THE RESULT
+print(f"\n\n The Price Range of the specified mobile phone mibht be {op1[int(res)]} ( {op2[int(res)]} )")
