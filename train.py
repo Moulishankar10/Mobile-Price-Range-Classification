@@ -37,4 +37,21 @@ model.compile(loss = 'sparse_categorical_crossentropy', optimizer = 'adam', metr
 history = model.fit(x_train, y_train, epochs = 150, batch_size = 32, validation_data = (x_val, y_val))
 print("\n\n ----- Model is trained successfully ! ----- \n\n")
 
+# VISUALISING THE MODEL LOSS
+plt.plot(history.history['loss'])
+plt.plot(history.history['val_loss'])
+plt.title('MODEL LOSS')
+plt.ylabel('Loss')
+plt.xlabel('Epoch')
+plt.legend(['Train Loss', 'Validation Loss'], loc='upper right')
+plt.show()
+
+# VISUALISING THE MODEL ACCURACY
+plt.plot(history.history['accuracy'])
+plt.plot(history.history['val_accuracy'])
+plt.title('Accuracy Graph')
+plt.ylabel('Accuracy')
+plt.xlabel('Epoch')
+plt.legend(['Train Accuracy', 'Validation Accuracy'], loc='bottom right')
+plt.show()
 
