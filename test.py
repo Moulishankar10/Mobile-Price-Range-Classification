@@ -35,3 +35,7 @@ fg = 1 if fg == 'y' else 0
 fcs = 1 if fcs == 'y' else 0
 
 spec = [bc,ds,fc,rc,im,fs,ram,pb,dw,dl,fg,fcs]
+
+# DEFINING CLASSIFICATIONS
+op1 = ["Below Rs.10,000","Rs.10,000 - Rs.20,000","Rs.20,000 - Rs.30,000","Above Rs.30,000"]
+op2 = ["Low Cost","Medium Cost","High Cost","Very High Cost"]
