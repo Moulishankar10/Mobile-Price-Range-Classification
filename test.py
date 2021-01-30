@@ -16,17 +16,17 @@ model = load_model("model/model",custom_objects=None,compile=True)
 print("\n\n Enter the following specifications of a mobile phone to explore its price range. \n\n")
 
 bc = int(input("\nBattery Capacity (mAh) : "))
-ds = input("\nDual SIM (y/n) : ")
+ds = input("\nDual SIM (y/n) : ").lower()
 fc = int(input("\nFront Camera (mega pixels) : "))
 rc = int(input("\nRear Camera (mega pixels) : "))
 im = int(input("\nInternal Memory (GB) : "))
-fs = input("\nFingerprint Sensor (y/n) : ")
+fs = input("\nFingerprint Sensor (y/n) : ").lower()
 ram = int(input("\nRAM (GB): "))
 pb = int(input("\nProcessor Benchmark : "))
 dw = int(input("\nDisplay Width (pixel) : "))
 dl = int(input("\nDisplay Length (pixel) : "))
-fg = input("\n5G (y/n) : ")
-fcs = input("\nFast Charging Support (y/n) : ")
+fg = input("\n5G (y/n) : ").lower()
+fcs = input("\nFast Charging Support (y/n) : ").lower()
 
 # PROCESSING INPUT DATA
 ds = 1 if ds == 'y' else 0
