@@ -49,7 +49,7 @@ plt.show()
 # VISUALISING THE MODEL ACCURACY
 plt.plot(history.history['accuracy'])
 plt.plot(history.history['val_accuracy'])
-plt.title('Accuracy Graph')
+plt.title('MODEL ACCURACY')
 plt.ylabel('Accuracy')
 plt.xlabel('Epoch')
 plt.legend(['Train Accuracy', 'Validation Accuracy'], loc='bottom right')
