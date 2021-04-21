@@ -45,4 +45,4 @@ res = model.predict([spec])
 res = np.argmax(res,axis = 1)
 
 # DISPLAYING THE RESULT
-print(f"\n\n The Price Range of the specified mobile phone mibht be {op1[int(res)]} ( {op2[int(res)]} )")
+print(f"\n\n The Price Range of the specified mobile phone might be {op1[int(res)]} ( {op2[int(res)]} )")
