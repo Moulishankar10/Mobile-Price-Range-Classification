@@ -1,10 +1,18 @@
 # Mobile-Price-Range-Classification
 
+## About
+
 A MultiClass Classification model, developed using TensorFlow. The model classifies the price range of a mobile phone.
 
 The model collects the specifications of a mobile phone and by analysing that, it categorizes the price range, which may be helpful to identify a mobile phone's price range by figuring out it's specifications.
 
 Model Accuracy Acheived : Above 98%
+
+## Developed by
+
+[Moulishankar M R](https://github.com/Moulishankar10)
+
+[Vigneshwar Ravichandar](https://github.com/ToastCoder)
 
 ## Tested With
 
@@ -37,8 +45,3 @@ Model Accuracy Acheived : Above 98%
  3. High Cost
  4. Very High Cost
 
-## Developed by
-
-[Moulishankar M R](https://github.com/Moulishankar10)
-
-[Vigneshwar Ravichandar](https://github.com/ToastCoder)
